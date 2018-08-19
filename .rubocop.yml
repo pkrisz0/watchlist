@@ -1,0 +1,1002 @@
+AllCops:
+  # Include common Ruby source files.
+  Include:
+    - '**/*.gemspec'
+    - '**/*.podspec'
+    - '**/*.jbuilder'
+    - '**/*.rake'
+    - '**/*.opal'
+    - '**/config.ru'
+    - '**/Gemfile'
+    - '**/Rakefile'
+    - '**/Capfile'
+    - '**/Guardfile'
+    - '**/Podfile'
+    - '**/Thorfile'
+    - '**/Vagrantfile'
+    - '**/Berksfile'
+    - '**/Cheffile'
+    - '**/Vagabondfile'
+  Exclude:
+    - 'db/schema.rb'
+    - 'storage/**/*'
+    - 'tmp/**/*'
+    - 'bin/**/*'
+
+AllCops:
+  TargetRubyVersion: 2.4
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+
+# Supports --auto-correct
+Layout/BlockAlignment:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/DefEndAlignment:
+  Enabled: true
+
+# Supports --auto-correct
+Lint/DeprecatedClassMethods:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/EndAlignment:
+  Enabled: true
+
+# Supports --auto-correct
+# Disabled by Rubocop defaults
+Lint/LiteralInInterpolation:
+  Enabled: false
+
+# Supports --auto-correct
+Lint/StringConversionInInterpolation:
+  Enabled: true
+
+# Supports --auto-correct
+Lint/UnusedBlockArgument:
+  Enabled: true
+
+# Supports --auto-correct
+Lint/UnusedMethodArgument:
+  Enabled: true
+
+# Supports --auto-correct
+Performance/Count:
+  Enabled: true
+
+# Supports --auto-correct
+Performance/Detect:
+  Enabled: true
+
+# Supports --auto-correct
+Performance/FlatMap:
+  Enabled: true
+  EnabledForFlattenWithoutParams: true
+
+# Supports --auto-correct
+Performance/ReverseEach:
+  Enabled: true
+
+# Supports --auto-correct
+Performance/Sample:
+  Enabled: true
+
+# Supports --auto-correct
+Performance/Size:
+  Enabled: true
+
+# Supports --auto-correct
+Rails/ActionFilter:
+  Enabled: true
+
+# Supports --auto-correct
+Rails/Delegate:
+  Enabled: true
+
+# Supports --auto-correct
+Rails/FindBy:
+  Enabled: true
+
+# Supports --auto-correct
+Rails/FindEach:
+  Enabled: true
+
+# Supports --auto-correct
+Rails/ReadWriteAttribute:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/AccessModifierIndentation:
+  Enabled: true
+
+# Supports --auto-correct
+Style/Alias:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/AlignArray:
+  Enabled: true
+
+# Supports --auto-correct
+# Originally disabled by DiNa standard
+Layout/AlignHash:
+  Enabled: true
+
+# Supports --auto-correct
+# Originally disabled by DiNa standard
+Layout/AlignParameters:
+  Enabled: false
+
+# Supports --auto-correct
+Style/AndOr:
+  Enabled: true
+
+# Supports --auto-correct
+Style/ArrayJoin:
+  Enabled: true
+
+# Supports --auto-correct
+Style/Attr:
+  Enabled: true
+
+# Supports --auto-correct
+# Should be false, %Q is more explicit
+Style/BarePercentLiterals:
+  Enabled: false
+
+# Supports --auto-correct
+Style/BlockComments:
+  Enabled: true
+
+# Supports --auto-correct
+# Should be false, raises questions about some block interpretation, parses differently
+Style/BlockDelimiters:
+  Enabled: false
+
+# Supports --auto-correct
+Layout/BlockEndNewline:
+  Enabled: true
+
+# Supports --auto-correct
+# Originally disabled by DiNa standard
+Style/BracesAroundHashParameters:
+  Enabled: false
+
+# Supports --auto-correct
+Layout/CaseIndentation:
+  Enabled: true
+
+# Supports --auto-correct
+Style/CharacterLiteral:
+  Enabled: true
+
+# Supports --auto-correct
+# Originally disabled by DiNa standard
+Style/ClassCheck:
+  Enabled: false
+
+# Supports --auto-correct
+Style/ClassMethods:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/ClosingParenthesisIndentation:
+  Enabled: true
+
+# Supports --auto-correct
+# Disabled by Rubocop defaults
+Style/CollectionMethods:
+  Enabled: false
+
+# Supports --auto-correct
+Style/ColonMethodCall:
+  Enabled: true
+
+# Supports --auto-correct
+Style/CommandLiteral:
+  Enabled: true
+
+# Supports --auto-correct
+Style/CommentAnnotation:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/CommentIndentation:
+  Enabled: true
+
+# Supports --auto-correct
+# Disabled by Rubocop defaults
+Style/Copyright:
+  Enabled: false
+
+# Supports --auto-correct
+Style/DefWithParentheses:
+  Enabled: true
+
+# Supports --auto-correct
+Style/PreferredHashMethods:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/DotPosition:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/ElseAlignment:
+  Enabled: true
+
+# Supports --auto-correct
+Style/EmptyElse:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/EmptyLineBetweenDefs:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/EmptyLines:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/EmptyLinesAroundAccessModifier:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/EmptyLinesAroundClassBody:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/EmptyLinesAroundMethodBody:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/EmptyLinesAroundModuleBody:
+  Enabled: true
+
+# Supports --auto-correct
+Style/EmptyLiteral:
+  Enabled: true
+
+# Supports --auto-correct
+# Disabled by Rubocop defaults
+Style/Encoding:
+  Enabled: false
+
+# Supports --auto-correct
+Style/EvenOdd:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/ExtraSpacing:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/FirstParameterIndentation:
+  Enabled: true
+
+# Supports --auto-correct
+Style/HashSyntax:
+  Enabled: true
+
+# Supports --auto-correct
+Style/IfUnlessModifier:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/IndentArray:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/IndentHash:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/IndentationConsistency:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/IndentationWidth:
+  Enabled: true
+
+# Supports --auto-correct
+Style/InfiniteLoop:
+  Enabled: true
+
+# Supports --auto-correct
+# Should be false, converting between multi- and singleline lambdas result in unexpected changes in operation
+Style/Lambda:
+  Enabled: false
+
+# Supports --auto-correct
+Style/LambdaCall:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/LeadingCommentSpace:
+  Enabled: true
+
+# Supports --auto-correct
+Style/LineEndConcatenation:
+  Enabled: true
+
+# Supports --auto-correct
+Style/MethodCallWithoutArgsParentheses:
+  Enabled: true
+
+# Supports --auto-correct
+Style/MethodDefParentheses:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/MultilineBlockLayout:
+  Enabled: true
+
+# Supports --auto-correct
+Style/MultilineIfThen:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/MultilineOperationIndentation:
+  Enabled: true
+
+# Supports --auto-correct
+Style/NegatedIf:
+  Enabled: true
+
+# Supports --auto-correct
+Style/NegatedWhile:
+  Enabled: true
+
+# Supports --auto-correct
+Style/NilComparison:
+  Enabled: true
+
+# Supports --auto-correct
+Style/NonNilCheck:
+  Enabled: true
+
+# Supports --auto-correct
+Style/Not:
+  Enabled: true
+
+# Supports --auto-correct
+# Should be false, too many false positives
+Style/NumericLiterals:
+  Enabled: false
+
+# Supports --auto-correct
+# Should be false, parallel assignments are awesome
+Style/ParallelAssignment:
+  Enabled: false
+
+# Supports --auto-correct
+Style/ParenthesesAroundCondition:
+  Enabled: true
+
+# Supports --auto-correct
+Style/PercentLiteralDelimiters:
+  Enabled: true
+
+# Supports --auto-correct
+Style/PercentQLiterals:
+  Enabled: true
+
+# Supports --auto-correct
+# Should be false, shorthand notation is much more readable
+Style/PerlBackrefs:
+  Enabled: false
+
+# Supports --auto-correct
+Style/Proc:
+  Enabled: true
+
+# Supports --auto-correct
+Style/RedundantBegin:
+  Enabled: true
+
+# Supports --auto-correct
+Style/RedundantException:
+  Enabled: true
+
+# Supports --auto-correct
+Style/RedundantReturn:
+  Enabled: true
+
+# Supports --auto-correct
+# Should be false, explicit self has semantic meaning
+Style/RedundantSelf:
+  Enabled: false
+
+# Supports --auto-correct
+# Should be false, do not works well with step definitions
+Style/RegexpLiteral:
+  Enabled: false
+
+# Supports --auto-correct
+Style/SelfAssignment:
+  Enabled: true
+
+# Supports --auto-correct
+Style/Semicolon:
+  Enabled: true
+
+# Supports --auto-correct
+Style/SignalException:
+  Enabled: true
+
+# Supports --auto-correct
+Style/SingleLineMethods:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/SpaceBeforeFirstArg:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/SpaceAfterColon:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/SpaceAfterComma:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/SpaceAroundKeyword:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/SpaceAfterMethodName:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/SpaceAfterNot:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/SpaceAfterSemicolon:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/SpaceAroundBlockParameters:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/SpaceAroundEqualsInParameterDefault:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/SpaceAroundOperators:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/SpaceBeforeBlockBraces:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/SpaceBeforeComma:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/SpaceBeforeComment:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/SpaceAroundKeyword:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/SpaceBeforeSemicolon:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/SpaceInsideBlockBraces:
+  Enabled: true
+#
+## Supports --auto-correct
+#Layout/SpaceInsideBrackets:
+#  Enabled: true
+
+# Supports --auto-correct
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/SpaceInsideParens:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/SpaceInsideRangeLiteral:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/SpaceInsideStringInterpolation:
+  Enabled: true
+
+# Supports --auto-correct
+Style/SpecialGlobalVars:
+  Enabled: true
+
+# Supports --auto-correct
+Style/StringLiterals:
+  Enabled: true
+
+# Supports --auto-correct
+Style/StringLiteralsInInterpolation:
+  Enabled: true
+
+# Supports --auto-correct
+Style/SymbolLiteral:
+  Enabled: true
+
+# Supports --auto-correct
+Style/SymbolProc:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/Tab:
+  Enabled: true
+
+# Supports --auto-correct
+Layout/TrailingBlankLines:
+  Enabled: true
+
+# Supports --auto-correct
+Style/TrailingCommaInArrayLiteral:
+  Enabled: true
+
+# Supports --auto-correct
+# Should be false, much more explicit if underscore is there
+Style/TrailingUnderscoreVariable:
+  Enabled: false
+
+# Supports --auto-correct
+Layout/TrailingWhitespace:
+  Enabled: true
+
+# Supports --auto-correct
+# Should be false, its only suggestion was misleading
+Style/TrivialAccessors:
+  Enabled: false
+
+# Supports --auto-correct
+Style/UnneededCapitalW:
+  Enabled: true
+
+# Supports --auto-correct
+# Should be false, no clear advantage, too much mess with step definitions
+Style/UnneededPercentQ:
+  Enabled: false
+
+# Supports --auto-correct
+Style/VariableInterpolation:
+  Enabled: true
+
+# Supports --auto-correct
+Style/WhenThen:
+  Enabled: true
+
+# Supports --auto-correct
+Style/WhileUntilDo:
+  Enabled: true
+
+# Supports --auto-correct
+Style/WhileUntilModifier:
+  Enabled: true
+
+# Supports --auto-correct
+# Should be false, imho much readeable with apostrophes
+Style/WordArray:
+  Enabled: false
+
+# Supports --auto-correct
+# Should be false, seems buggy for me
+Style/Next:
+  Enabled: false
+
+# Supports --auto-correct
+Style/RescueModifier:
+  Enabled: true
+
+# Introduced after version 0.32.1
+# Supports --auto-correct
+Layout/InitialIndentation:
+  Enabled: true
+
+# Introduced after version 0.32.1
+# Supports --auto-correct
+Style/NestedModifier:
+  Enabled: true
+
+# Introduced after version 0.32.1
+# Supports --auto-correct
+Style/RedundantFreeze:
+  Enabled: true
+
+# Introduced after version 0.32.1
+# Supports --auto-correct
+Layout/RescueEnsureAlignment:
+  Enabled: true
+
+# Introduced after version 0.32.1
+# Supports --auto-correct
+Style/StabbyLambdaParentheses:
+  Enabled: true
+
+# Introduced after version 0.32.1
+# Supports --auto-correct
+Performance/CaseWhenSplat:
+  Enabled: true
+
+# Introduced after version 0.32.1
+# Supports --auto-correct
+Performance/StringReplacement:
+  Enabled: true
+
+# Introduced after version 0.32.1
+# Supports --auto-correct
+Rails/PluralizationGrammar:
+  Enabled: true
+
+# Introduced after version 0.32.1
+# Supports --auto-correct
+# Disabled by Rubocop defaults
+Layout/FirstArrayElementLineBreak:
+  Enabled: false
+
+# Introduced after version 0.32.1
+# Supports --auto-correct
+# Disabled by Rubocop defaults
+Layout/FirstHashElementLineBreak:
+  Enabled: false
+
+# Introduced after version 0.32.1
+# Supports --auto-correct
+# Disabled by Rubocop defaults
+Layout/FirstMethodArgumentLineBreak:
+  Enabled: false
+
+# Introduced after version 0.32.1
+# Supports --auto-correct
+# Disabled by Rubocop defaults
+Layout/FirstMethodParameterLineBreak:
+  Enabled: false
+
+# Introduced after version 0.32.1
+# Supports --auto-correct
+# Disabled by Rubocop defaults
+Style/MutableConstant:
+  Enabled: false
+
+# Introduced after version 0.32.1
+# Supports --auto-correct
+# Disabled by Rubocop defaults
+Style/StringMethods:
+  Enabled: false
+
+Lint/AmbiguousOperator:
+  Enabled: true
+
+# Should be false, to many false positives for step definitions
+Lint/AmbiguousRegexpLiteral:
+  Enabled: false
+
+Lint/AssignmentInCondition:
+  Enabled: true
+
+Layout/ConditionPosition:
+  Enabled: true
+
+Lint/Debugger:
+  Enabled: true
+
+Lint/DuplicateMethods:
+  Enabled: true
+
+Lint/EachWithObjectArgument:
+  Enabled: true
+
+Lint/ElseLayout:
+  Enabled: true
+
+Lint/EmptyEnsure:
+  Enabled: true
+
+Lint/EmptyInterpolation:
+  Enabled: true
+
+Lint/EndInMethod:
+  Enabled: true
+
+Lint/EnsureReturn:
+  Enabled: true
+
+Security/Eval:
+  Enabled: true
+
+# Should be false by now because we have some tricky issues, but should be false in the long run
+Lint/HandleExceptions:
+  Enabled: false
+
+Lint/LiteralAsCondition:
+  Enabled: true
+
+Lint/Loop:
+  Enabled: true
+
+# Should be false, linter do not work very well for eg with instance_eval
+Lint/NestedMethodDefinition:
+  Enabled: false
+
+Lint/NonLocalExitFromIterator:
+  Enabled: true
+
+# Should be false, linter do not work very well with specs
+Lint/ParenthesesAsGroupedExpression:
+  Enabled: false
+
+Lint/RequireParentheses:
+  Enabled: true
+
+# Should be false, very hard to decide for a legacy code if it suggests good alternative
+Lint/RescueException:
+  Enabled: false
+
+Lint/ShadowingOuterLocalVariable:
+  Enabled: true
+
+Lint/UnderscorePrefixedVariableName:
+  Enabled: true
+
+Lint/UnneededCopDisableDirective:
+  Enabled: true
+
+
+Lint/UnreachableCode:
+  Enabled: true
+
+Lint/UselessAccessModifier:
+  Enabled: true
+
+# Should be false, hard to guess sometimes that assigning maybe has some side-effect, but can be useful to spot hard typos
+Lint/UselessAssignment:
+  Enabled: false
+
+Lint/UselessComparison:
+  Enabled: true
+
+Lint/UselessElseWithoutRescue:
+  Enabled: true
+
+Lint/UselessSetterCall:
+  Enabled: true
+
+# Should be false, many-many false positives for rspec
+Lint/Void:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false # NOTE: checking this should be handled by codeclimate
+
+Metrics/BlockNesting:
+  Enabled: false # NOTE: checking this should be handled by codeclimate
+
+Metrics/ClassLength:
+  Enabled: false # NOTE: checking this should be handled by codeclimate
+
+Metrics/CyclomaticComplexity:
+  Enabled: false # NOTE: checking this should be handled by codeclimate
+
+Metrics/LineLength:
+  Enabled: false # NOTE: checking this should be handled by codeclimate
+
+Metrics/MethodLength:
+  Enabled: false # NOTE: checking this should be handled by codeclimate
+
+Metrics/ModuleLength:
+  Enabled: false # NOTE: checking this should be handled by codeclimate
+
+Metrics/ParameterLists:
+  Enabled: false # NOTE: checking this should be handled by codeclimate
+
+Metrics/PerceivedComplexity:
+  Enabled: false # NOTE: checking this should be handled by codeclimate
+
+Metrics/BlockLength:
+  Enabled: false
+
+Rails/Date:
+  Enabled: true
+
+#Rails/DefaultScope:
+#  Enabled: true
+
+Rails/HasAndBelongsToMany:
+  Enabled: true
+
+Rails/Output:
+  Enabled: true
+
+Rails/ScopeArgs:
+  Enabled: true
+
+Rails/TimeZone:
+  Enabled: true
+
+Rails/Validation:
+  Enabled: true
+
+# Should be false, too much false positives, for eg callback method names
+Naming/AccessorMethodName:
+  Enabled: false
+
+# This should be false, sometimes it's easier to describe something in hungarian
+Style/AsciiComments:
+  Enabled: false
+
+Naming/AsciiIdentifiers:
+  Enabled: true
+
+# Disabled by Rubocop defaults
+Style/AutoResourceCleanup:
+  Enabled: false
+
+Style/BeginBlock:
+  Enabled: true
+
+Style/CaseEquality:
+  Enabled: true
+
+Naming/ClassAndModuleCamelCase:
+  Enabled: true
+
+# Should be false, but can be corrected later, it's just a matter of style
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/ClassVars:
+  Enabled: false # TODO: check if this helps
+
+Naming/ConstantName:
+  Enabled: true
+
+# Originally disabled by DiNa standard
+Style/Documentation:
+  Enabled: false
+
+# Should be false by now, but seems a good practice
+Style/DoubleNegation:
+  Enabled: false
+
+# Should be false, seems hard to fix
+Style/EachWithObject:
+  Enabled: false
+
+Style/EndBlock:
+  Enabled: true
+
+Layout/EndOfLine:
+  Enabled: true
+
+# Should be false, conflicts with current naming of engines, hard to disable per file
+Naming/FileName:
+  Enabled: false
+
+Style/FlipFlop:
+  Enabled: true
+
+Style/For:
+  Enabled: true
+
+# Should be false, I do not agree that % is cryptic
+Style/FormatString:
+  Enabled: false
+
+Style/GlobalVars:
+  Enabled: false # TODO: check if this helps
+
+# Should be false, can't be applied as a general rule
+Style/GuardClause:
+  Enabled: false
+
+Style/IfWithSemicolon:
+  Enabled: true
+
+# Disabled by Rubocop defaults
+Style/InlineComment:
+  Enabled: false
+
+# Disabled by Rubocop defaults
+Style/MethodCalledOnDoEndBlock:
+  Enabled: false
+
+Naming/MethodName:
+  Enabled: true
+
+# Disabled by Rubocop defaults
+Style/MissingElse:
+  Enabled: false
+
+Style/ModuleFunction:
+  Enabled: true
+
+Style/MultilineBlockChain:
+  Enabled: true
+
+Style/MultilineTernaryOperator:
+  Enabled: true
+
+Style/NestedTernaryOperator:
+  Enabled: true
+
+Style/OneLineConditional:
+  Enabled: true
+
+Naming/BinaryOperatorParameterName:
+  Enabled: true
+
+# Should be false, hard to track down every call
+Naming/PredicateName:
+  Enabled: false
+
+Style/RaiseArgs:
+  Enabled: true
+
+# Originally disabled by DiNa standard
+Style/SingleLineBlockParams:
+  Enabled: false
+
+Style/StructInheritance:
+  Enabled: false # TODO: Temporarily disabled, policy files should be pure ruby classes
+
+# Disabled by Rubocop defaults
+Style/SymbolArray:
+  Enabled: false
+
+Style/UnlessElse:
+  Enabled: true
+
+Naming/VariableName:
+  Enabled: true
+
+# Introduced after version 0.32.1
+Style/OptionalArguments:
+  Enabled: true
+
+# Introduced after version 0.32.1
+Style/RedundantException:
+  Enabled: true
+
+# Introduced after version 0.32.1
+Style/RedundantReturn:
+  Enabled: true
+
+# Introduced after version 0.32.1
+Lint/CircularArgumentReference:
+  Enabled: true
+
+# Introduced after version 0.32.1
+Lint/DuplicatedKey:
+  Enabled: true
+
+# Introduced after version 0.32.1
+Lint/FormatParameterMismatch:
+  Enabled: true
+
+# Introduced after version 0.32.1
+Performance/FixedSize:
+  Enabled: true
+
+# Introduced after version 0.32.1
+# Disabled by Rubocop defaults
+Style/OptionHash:
+  Enabled: false
+
+# Introduced after version 0.32.1
+# Disabled by Rubocop defaults
+Style/Send:
+  Enabled: false

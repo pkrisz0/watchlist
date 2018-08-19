@@ -1,0 +1,15 @@
+.container
+  .logo
+    %h1
+      %img{ src: "http://i.imgur.com/S7d4fpO.jpg" }/
+  %table
+    %tbody
+      - @movies.each do |movie|
+        .fbox{title: "#{ 'movie No.' + movie.id.to_s }"}
+          %img{ height: "280", src: movie.poster, width:"190"}/
+          .fsub
+            %ul
+              %li= movie.title
+              %li= movie.year
+              %li= movie.director_name
+              %li= movie.rating

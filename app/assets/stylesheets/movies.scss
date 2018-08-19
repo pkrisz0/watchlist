@@ -1,0 +1,25 @@
+// Place all the styles related to the Movie controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+.fbox {
+  float: left;
+  width: 200px;
+  height: 340px;
+  text-align: center;
+}
+
+.fsub {
+  ul {
+    list-style: none;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding-left: 0;
+  }
+}
