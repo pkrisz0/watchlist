@@ -1,0 +1,9 @@
+= simple_form_for @movie do |f|
+  = f.input :title
+  = f.input :director_first_name
+  = f.input :director_last_name
+  = f.input :year
+  = f.input :rating, collection: 1..5
+  = f.button :submit
+
+= link_to 'Back', root_path, class: "btn btn-success"

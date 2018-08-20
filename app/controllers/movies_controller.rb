@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
 class MoviesController < ApplicationController
-  def index
-    @movies = Movie.all
+  inherit_resources
+
+  def create
+    create!(notice: 'A new movieeeee!')
   end
 end

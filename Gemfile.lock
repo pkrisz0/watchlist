@@ -71,8 +71,16 @@ GEM
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
+    has_scope (0.7.2)
+      actionpack (>= 4.1)
+      activesupport (>= 4.1)
     i18n (1.1.0)
       concurrent-ruby (~> 1.0)
+    inherited_resources (1.9.0)
+      actionpack (>= 4.2, < 5.3)
+      has_scope (~> 0.6)
+      railties (>= 4.2, < 5.3)
+      responders
     iniparse (1.4.4)
     jaro_winkler (1.5.1)
     jbuilder (2.7.0)
@@ -136,6 +144,9 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    responders (2.4.0)
+      actionpack (>= 4.2.0, < 5.3)
+      railties (>= 4.2.0, < 5.3)
     rubocop (0.58.2)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
@@ -161,6 +172,9 @@ GEM
     selenium-webdriver (3.14.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.2)
+    simple_form (4.0.1)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
     spring (2.0.2)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -204,15 +218,18 @@ DEPENDENCIES
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
   haml
+  inherited_resources
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   overcommit
   pg (>= 0.18, < 2.0)
   puma (~> 3.7)
   rails (~> 5.1.6)
+  responders
   rubocop
   sass-rails (~> 5.0)
   selenium-webdriver
+  simple_form
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
