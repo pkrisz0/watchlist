@@ -1,0 +1,12 @@
+.container
+  = render'shared/logo'
+
+  = button_to "New Thing", { controller: :index, action: :new }, method: :get, class: :new_button
+
+  - @watchables.each do |watchable|
+    - deco =  WatchableDecorator.new(watchable)
+    .fbox{ title: deco.title }
+      %img{ height: "280", src: watchable.poster, width:"190"}/
+      .fsub
+        %ul
+          = deco.fsub_text

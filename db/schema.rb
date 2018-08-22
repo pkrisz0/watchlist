@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20_180_819_114_534) do
+ActiveRecord::Schema.define(version: 20180822200713) do
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
 
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20_180_819_114_534) do
     t.integer 'season_end'
     t.integer 'rating'
     t.string 'poster'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
+    t.integer 'year_start'
+    t.integer 'year_end'
   end
 end
